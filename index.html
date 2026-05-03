@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Matematikutforskaren</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: {
+                soft: {
+                    bg:'#f4f3ef', surface:'#ffffff', text:'#4a4b50', muted:'#8c8d92',
+                    border:'#d6d4d0', blue:'#5b80a5', blueLight:'#8db1d1',
+                    green:'#4f7c75', greenLight:'#8bb39c', purple:'#6a6281',
+                    purpleLight:'#938db3', pink:'#a85c72', pinkLight:'#d58b99',
+                    yellow:'#dec894', yellowDark:'#b8a36e', teal:'#3d8a8a',
+                    tealLight:'#72b5b5'
+                }
+            }}}
+        };
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-soft-bg text-soft-text">
+
+    <div id="app-shell" class="flex flex-col h-screen">
+
+        <header id="app-header" class="flex items-center justify-between px-6 py-3
+                                       bg-soft-surface border-b border-soft-border shrink-0">
+            <button id="btn-home" class="hidden text-soft-muted hover:text-soft-blue
+                                         transition-colors p-2 rounded-full hover:bg-soft-bg"
+                    aria-label="Tillbaka till start">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1 id="app-title" class="text-2xl font-bold text-soft-text tracking-tight">
+                <i class="fas fa-shapes text-soft-blue mr-2"></i> Matematikutforskaren
+            </h1>
+            <div id="controls-area" class="flex gap-3"></div>
+        </header>
+
+        <main id="tool-mount" class="flex-1 relative overflow-hidden"></main>
+
+    </div>
+
+    <script type="module" src="./modules/main.js"></script>
+</body>
+</html>
