@@ -1,6 +1,7 @@
 import { ToolRegistry }     from './core/ToolRegistry.js';
 import { createHomeTool }   from './tools/HomeTool.js';
 import { createVolumeTool } from './tools/VolumeTool.js';
+import { createClockTool }  from './tools/ClockTool.js';
 
 const registry = new ToolRegistry({
     mountEl:      document.getElementById('tool-mount'),
@@ -11,6 +12,7 @@ const registry = new ToolRegistry({
 
 registry.register(createHomeTool());
 registry.register(createVolumeTool());
+registry.register(createClockTool());
 
 registry.mountActive();
 
