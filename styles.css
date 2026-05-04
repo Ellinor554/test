@@ -105,3 +105,13 @@ body {
 }
 .vol-add-btn:hover  { background: white; box-shadow: 0 2px 8px rgba(74,75,80,0.12); }
 .vol-add-btn:active { transform: translateY(1px); }
+/* Counting tool — math grid hover/click highlighting */
+.math-grid-cell { transition: all 0.1s; }
+.math-grid-cell:hover {
+    background-color: #f4f3ef;
+    transform: scale(1.1);
+    z-index: 10;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.highlight-row-col { background-color: #f4f3ef; }
