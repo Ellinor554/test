@@ -6,9 +6,9 @@ import { appState } from '../core/AppState.js';
 // in main.js.
 const CARDS = [
     { id: 'fractions',       enabled: false, icon: 'fa-chart-pie',         bg: 'bg-soft-pinkLight/30',   fg: 'text-soft-pink',       title: 'Bråk',              desc: 'Jämför delar och bygg hela med flyttbara bråkcirklar.' },
-    { id: 'numberlines',     enabled: false, icon: 'fa-ruler-horizontal',  bg: 'bg-soft-blueLight/30',   fg: 'text-soft-blue',       title: 'Tallinjer',         desc: 'Hoppa längs linjer från 0-10, 0-100 och utforska decimaltal.' },
+    { id: 'numberlines',     enabled: true, icon: 'fa-ruler-horizontal',  bg: 'bg-soft-blueLight/30',   fg: 'text-soft-blue',       title: 'Tallinjer',         desc: 'Hoppa längs linjer från 0-10, 0-100 och utforska decimaltal.' },
     { id: 'geometry',        enabled: false, icon: 'fa-cubes',             bg: 'bg-soft-greenLight/30',  fg: 'text-soft-green',      title: 'Geometriska objekt', desc: 'Vrid och vänd på 2D- och 3D-former för att förstå deras egenskaper.' },
-    { id: 'counting',        enabled: false, icon: 'fa-calculator',        bg: 'bg-soft-yellow/40',      fg: 'text-soft-yellowDark', title: 'Räkning',           desc: 'Hitta tiokompisarna och öva med multiplikations- och divisionskvadrater.' },
+    { id: 'counting',        enabled: true, icon: 'fa-calculator',        bg: 'bg-soft-yellow/40',      fg: 'text-soft-yellowDark', title: 'Räkning',           desc: 'Hitta tiokompisarna och öva med multiplikations- och divisionskvadrater.' },
     { id: 'clock',           enabled: true, icon: 'fa-clock',             bg: 'bg-soft-purpleLight/30', fg: 'text-soft-purple',     title: 'Klockan',           desc: 'Dra i visarna för att jämföra analog och digital tid.' },
     { id: 'statistics',      enabled: false, icon: 'fa-chart-bar',         bg: 'bg-soft-tealLight/30',   fg: 'text-soft-teal',       title: 'Statistik',         desc: 'Bygg stapeldiagram, linjediagram och cirkeldiagram med egna värden.' },
     { id: 'koordinat',       enabled: false, icon: 'fa-crosshairs',        bg: 'bg-soft-purpleLight/30', fg: 'text-soft-purple',     title: 'Koordinatsystem',   desc: 'Rita punkter i ett koordinatplan och utforska x- och y-axeln.' },
